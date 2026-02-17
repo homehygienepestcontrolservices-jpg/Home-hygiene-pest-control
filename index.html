@@ -18,13 +18,8 @@
       </a>
     </div>
 
-    <div class="menu-toggle">&#9776;</div>
-
     <nav class="nav">
       <a href="index.html">Home</a>
-      <a href="termite-control.html">Termite</a>
-      <a href="cockroach-control.html">Cockroach</a>
-      <a href="bed-bug-control.html">Bed Bug</a>
       <a href="contact.html">Contact</a>
       <a href="tel:9354551025" class="call-btn">Call Now</a>
     </nav>
@@ -82,26 +77,6 @@
 <footer class="footer">
   <p>© 2026 Home Hygiene Pest Control Services</p>
 </footer>
-
-<script>
-const toggle = document.querySelector(".menu-toggle");
-const nav = document.querySelector(".nav");
-
-toggle.addEventListener("click",()=>{
-  nav.classList.toggle("active");
-});
-
-const sections = document.querySelectorAll(".section");
-
-window.addEventListener("scroll",()=>{
-  sections.forEach(sec=>{
-    const top = sec.getBoundingClientRect().top;
-    if(top < window.innerHeight - 100){
-      sec.classList.add("show");
-    }
-  });
-});
-</script>
 
 </body>
 </html>
