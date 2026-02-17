@@ -59,6 +59,7 @@ a{text-decoration:none;}
 
 .logo img{
   height:60px;
+  width:auto;
 }
 
 .nav{
@@ -107,6 +108,7 @@ a{text-decoration:none;}
   text-align:center;
 }
 
+/* SERVICES */
 .services{
   padding:80px 20px;
   text-align:center;
@@ -195,14 +197,9 @@ form textarea{
   }
 }
 
-/* SCROLL ANIMATION */
+/* SAFE SCROLL ANIMATION */
 .section{
-  opacity:0;
-  transform:translateY(40px);
-  transition:1s;
-}
-
-.section.show{
-  opacity:1;
+  opacity:1;   /* Ab visible rahega */
   transform:translateY(0);
+  transition:1s;
 }
