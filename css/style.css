@@ -19,8 +19,6 @@ body{
   margin:auto;
 }
 
-a{text-decoration:none;}
-
 .section{
   padding:80px 20px;
 }
@@ -29,10 +27,15 @@ h1,h2,h3{
   font-weight:700;
 }
 
+h2{
+  font-size:32px;
+}
+
+/* ================= BUTTONS ================= */
 .btn-primary{
   background:linear-gradient(45deg,#1e7b34,#2fbf71);
   color:#fff;
-  padding:12px 28px;
+  padding:14px 30px;
   border-radius:30px;
   display:inline-block;
   font-weight:600;
@@ -40,14 +43,14 @@ h1,h2,h3{
 }
 
 .btn-primary:hover{
-  transform:translateY(-4px);
-  box-shadow:0 10px 25px rgba(0,0,0,0.15);
+  transform:translateY(-5px);
+  box-shadow:0 12px 30px rgba(0,0,0,0.2);
 }
 
 .btn-secondary{
   border:2px solid #2fbf71;
   color:#2fbf71;
-  padding:10px 26px;
+  padding:12px 28px;
   border-radius:30px;
   font-weight:600;
 }
@@ -55,7 +58,7 @@ h1,h2,h3{
 /* ================= HEADER ================= */
 .header{
   background:#fff;
-  box-shadow:0 5px 20px rgba(0,0,0,0.05);
+  box-shadow:0 5px 25px rgba(0,0,0,0.06);
   position:sticky;
   top:0;
   z-index:999;
@@ -65,11 +68,12 @@ h1,h2,h3{
   display:flex;
   justify-content:space-between;
   align-items:center;
-  padding:15px 0;
+  padding:10px 0;
 }
 
+/* ⭐ LOGO BIGGER */
 .logo img{
-  height:55px;
+  height:80px;
 }
 
 .nav{
@@ -80,16 +84,15 @@ h1,h2,h3{
 .nav a{
   margin-left:25px;
   color:#333;
-  font-weight:500;
+  font-weight:600;
 }
 
 .call-btn{
   background:#2fbf71;
   color:#fff;
-  padding:10px 18px;
+  padding:10px 20px;
   border-radius:20px;
   margin-left:20px;
-  font-size:14px;
 }
 
 .menu-toggle{
@@ -102,7 +105,7 @@ h1,h2,h3{
 .hero{
   min-height:95vh;
   background:
-  linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+  linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),
   url("../images/hero.jpg") center/cover no-repeat;
   display:flex;
   align-items:center;
@@ -111,24 +114,19 @@ h1,h2,h3{
   color:#fff;
 }
 
-.hero-overlay{
-  width:100%;
-}
-
-.hero-content{
-  max-width:800px;
-  margin:auto;
-  padding:20px;
-}
-
 .hero h1{
-  font-size:44px;
-  margin-bottom:20px;
+  font-size:52px;
+  margin-bottom:15px;
+}
+
+.hero h2{
+  font-size:26px;
+  margin-bottom:15px;
 }
 
 .hero p{
   font-size:18px;
-  margin-bottom:25px;
+  margin-bottom:30px;
 }
 
 .hero-btns{
@@ -138,18 +136,6 @@ h1,h2,h3{
   flex-wrap:wrap;
 }
 
-/* ================= INTRO ================= */
-.intro{
-  background:#fff;
-  text-align:center;
-}
-
-.intro p{
-  max-width:900px;
-  margin:auto;
-  margin-top:15px;
-}
-
 /* ================= SERVICES ================= */
 .services{
   background:#f1f6ff;
@@ -157,7 +143,7 @@ h1,h2,h3{
 }
 
 .service-grid{
-  margin-top:40px;
+  margin-top:50px;
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
   gap:30px;
@@ -165,14 +151,20 @@ h1,h2,h3{
 
 .service-box{
   background:#fff;
-  padding:35px 25px;
+  padding:40px 25px;
   border-radius:18px;
-  box-shadow:0 8px 25px rgba(0,0,0,0.06);
+  box-shadow:0 10px 30px rgba(0,0,0,0.06);
   transition:0.4s;
 }
 
+.service-box i{
+  color:#2fbf71;
+  margin-bottom:15px;
+}
+
 .service-box:hover{
-  transform:translateY(-10px);
+  transform:translateY(-12px);
+  box-shadow:0 20px 40px rgba(0,0,0,0.15);
 }
 
 /* ================= WHY ================= */
@@ -190,50 +182,14 @@ h1,h2,h3{
 
 .why-box{
   background:#f3f8ff;
-  padding:18px;
+  padding:20px;
   border-radius:12px;
   font-weight:600;
 }
 
-/* ================= PROCESS ================= */
-.process{
-  background:#f1f6ff;
-  text-align:center;
-}
-
-.process-grid{
-  margin-top:40px;
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
-  gap:20px;
-}
-
-.process-box{
-  background:#fff;
-  padding:25px;
-  border-radius:14px;
-  font-weight:600;
-  box-shadow:0 5px 15px rgba(0,0,0,0.05);
-}
-
-/* ================= AREAS ================= */
-.areas{
-  background:#fff;
-  text-align:center;
-}
-
-.area-grid{
-  margin-top:30px;
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(120px,1fr));
-  gap:15px;
-}
-
-.area-grid span{
-  background:#f1f6ff;
-  padding:10px;
-  border-radius:8px;
-  font-weight:500;
+.why-box i{
+  color:#2fbf71;
+  margin-right:8px;
 }
 
 /* ================= LEAD FORM ================= */
@@ -243,19 +199,10 @@ h1,h2,h3{
   text-align:center;
 }
 
-.lead h2{
-  margin-bottom:20px;
-}
-
-.lead-form{
-  max-width:600px;
-  margin:auto;
-}
-
 .lead-form input,
 .lead-form textarea{
   width:100%;
-  padding:14px;
+  padding:15px;
   border-radius:10px;
   border:none;
   margin-bottom:15px;
@@ -263,12 +210,6 @@ h1,h2,h3{
 
 .lead-form button{
   width:100%;
-}
-
-/* ================= CONTACT ================= */
-.contact{
-  background:#fff;
-  text-align:center;
 }
 
 /* ================= FOOTER ================= */
@@ -279,17 +220,26 @@ h1,h2,h3{
   padding:35px 15px;
 }
 
-/* ================= MOBILE CTA ================= */
-.mobile-cta{
-  display:none;
+/* ⭐ WHATSAPP FLOAT */
+.whatsapp-float{
+  position:fixed;
+  bottom:25px;
+  right:25px;
+  background:#25D366;
+  color:#fff;
+  font-size:28px;
+  padding:14px 18px;
+  border-radius:50%;
+  box-shadow:0 10px 25px rgba(0,0,0,0.25);
+  z-index:999;
 }
 
 /* ================= MOBILE ================= */
 @media(max-width:768px){
 
-  .menu-toggle{
-    display:block;
-  }
+  .logo img{ height:60px; }
+
+  .menu-toggle{ display:block; }
 
   .nav{
     position:fixed;
@@ -301,51 +251,10 @@ h1,h2,h3{
     flex-direction:column;
     padding-top:80px;
     transition:0.4s;
-    z-index:999;
   }
 
-  .nav.active{
-    right:0;
-  }
+  .nav.active{ right:0; }
 
-  .nav a{
-    margin:15px 0;
-    font-size:16px;
-  }
-
-  .hero h1{
-    font-size:30px;
-  }
-
-  .hero p{
-    font-size:16px;
-  }
-
-  /* Mobile Sticky CTA */
-  .mobile-cta{
-    display:flex;
-    position:fixed;
-    bottom:0;
-    left:0;
-    width:100%;
-    background:#fff;
-    box-shadow:0 -5px 15px rgba(0,0,0,0.1);
-    z-index:999;
-  }
-
-  .mobile-cta a{
-    flex:1;
-    text-align:center;
-    padding:14px;
-    font-weight:700;
-    color:#fff;
-  }
-
-  .mobile-cta a:first-child{
-    background:#198754;
-  }
-
-  .mobile-cta a:last-child{
-    background:#25D366;
-  }
+  .hero h1{ font-size:32px; }
+  .hero h2{ font-size:20px; }
 }
